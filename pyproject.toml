@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ad-signal-lakehouse"
+version = "0.1.0"
+description = "Dependency-free local marketing analytics lakehouse simulator using Python and SQLite."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Sameeruddin Mir" }]
+keywords = ["data-engineering", "analytics-engineering", "sqlite", "lakehouse", "marketing-analytics"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Database",
+  "Topic :: Software Development :: Testing",
+]
+
+[project.scripts]
+ad-signal-lakehouse = "ad_signal_lakehouse.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
