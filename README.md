@@ -1,12 +1,12 @@
 # Ad Signal Lakehouse
 
-Local marketing analytics lakehouse simulator for a Data Engineer / Analytics Engineer portfolio.
+Local marketing analytics lakehouse simulator for reproducible campaign-performance pipelines.
 
 This project builds a full bronze/silver/gold pipeline without cloud accounts, external services, network access, or third-party Python packages. It generates deterministic synthetic ad-platform events, lands append-only JSONL, validates and normalizes records into SQLite, computes campaign KPIs, runs quality gates, and emits a static dashboard artifact.
 
-## Why This Belongs On A Resume
+## Pipeline Capabilities
 
-Ad Signal Lakehouse demonstrates the practical pieces hiring teams expect from a modern data platform engineer:
+Ad Signal Lakehouse covers the core mechanics of a modern marketing data platform:
 
 - batch ingestion with immutable raw files
 - schema validation, reject handling, duplicate detection, and late-event flags
