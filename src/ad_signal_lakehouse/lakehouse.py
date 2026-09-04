@@ -215,7 +215,7 @@ def build_silver(conn: sqlite3.Connection) -> dict[str, int]:
 
     bronze_rows = conn.execute(
         "SELECT bronze_id, payload_json FROM bronze_events ORDER BY bronze_id"
-    ).fetchall()
+    )
 
     for row in bronze_rows:
         try:
